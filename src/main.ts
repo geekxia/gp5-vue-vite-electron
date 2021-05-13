@@ -4,4 +4,12 @@ import { createApp } from 'vue'
 import App from './App.vue'
 
 const app = createApp(App)
+app.config.globalProperties.$url = 'http://cnode.com'
+
+app.directive('highlight', {
+  beforeMount(el, binding, vnode) {
+    el.style.background = binding.value
+  }
+})
+
 app.mount('#app')  // 装载
