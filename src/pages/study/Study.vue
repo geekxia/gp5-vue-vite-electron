@@ -30,10 +30,7 @@
 
 	  <FunComponent /><hr>
 
-	  <TestJSX />
-
-
-	  <br><br><br><br>
+	  <TestJSX /><hr>
 
 </template>
 

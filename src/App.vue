@@ -1,7 +1,9 @@
 <template>
   <div class='navs'>
     <router-link tag='span' to='/study' active-class='on'>学习</router-link>
-    <router-link tag='span' to='/test' active-class='on'>测试</router-link>
+    <router-link tag='span' to='/list' active-class='on'>路由</router-link>
+    <router-link tag='span' to='/todo' active-class='on'>状态</router-link>
+    <router-link tag='span' to='/cnode' active-class='on'>Cnode</router-link>
   </div>
   <router-view></router-view>
 </template>
@@ -18,13 +20,19 @@ export default defineComponent({
 </script>
 
 <style>
-#app {
+/* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 20px;
+} */
+.navs {
+  text-align: center;
+  line-height: 120px;
+  background: rgba(251,251,251,1);
+  margin-bottom: 25px;
 }
 .navs a {
   padding: 0 20px;

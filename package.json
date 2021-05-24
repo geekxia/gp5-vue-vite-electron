@@ -1,16 +1,22 @@
 {
-  "name": "vue-vite-electron",
+  "name": "jietutools",
   "version": "0.0.0",
+  "author": "geekxia",
+  "description": "这个是一个好应用",
   "main": "main.js",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
-    "start": "concurrently \"npm run dev\" \"electron .\""
+    "start": "concurrently \"npm run dev\" \"electron .\"",
+    "pack": "electron-builder",
+    "dist": "electron-builder"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "vue": "^3.0.5",
-    "vue-router": "^4.0.8"
+    "vue-router": "^4.0.8",
+    "vuex": "^4.0.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.2.2",
@@ -22,5 +28,11 @@
     "typescript": "^4.1.3",
     "vite": "^2.3.0",
     "vue-tsc": "^0.0.24"
+  },
+  "build": {
+    "appId": "your.id",
+    "win": {
+
+    }
   }
 }

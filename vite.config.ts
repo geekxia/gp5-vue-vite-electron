@@ -18,6 +18,12 @@ export default defineConfig({
   },
   server: {
     port: 8888,
-    open: true
+    open: true,
+    proxy: {
+      '/api_test': {
+        target: 'https://cnodejs.org',
+        changeOrigin: true
+      }
+    }
   }
 })

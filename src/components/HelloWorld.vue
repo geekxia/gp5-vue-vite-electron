@@ -27,8 +27,8 @@ export default defineComponent({
   methods: {
     click() {
       this.msg = 'Hello GP5'
-      this.$refs.box.style.background = 'red'
-      this.$refs.box.style.color = 'white'
+      // this.$refs.box.style.background = 'red'
+      // this.$refs.box.style.color = 'white'
     }
   }
 })
