@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
-    "start": "concurrently \"npm run dev\" \"electron .\"",
+    "start": "npm run dev",
     "pack": "electron-builder",
     "dist": "electron-builder"
   },
